@@ -1,0 +1,100 @@
+device=cuda  out_dir=psa_ablation_v5_b30  budget=30  seeds=[42, 123, 456]
+Loaded ads: x=(1556250, 102)  y=(1556250, 4)
+Identified 403 scenarios
+Split: pool=333  val=30  internal-test=40
+External LHS test: x=(78475, 102)  y=(78475, 4)
+  LHS scenarios: 24, rows after extraction: 15000
+  PCA bottleneck k=8: explains 99.5% IC variance
+  t_max (physical) = 124.10s — will override ub[:,1] inside build_model
+
+── seed=42 ──
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_random         internal=4.092e-04  LHS=2.182e-02  (224s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_ic_coreset     internal=2.848e-04  LHS=4.221e-02  (223s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_badge          internal=2.006e-04  LHS=1.277e-02  (228s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_qbc            internal=3.686e-04  LHS=2.122e-02  (228s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_physics        internal=2.464e-04  LHS=9.686e-02  (264s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_gradient       internal=2.335e-04  LHS=7.211e-02  (232s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_v4_mix         internal=2.854e-04  LHS=2.557e-03  (277s)
+
+── seed=123 ──
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_random         internal=3.599e-04  LHS=7.532e-02  (222s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_ic_coreset     internal=2.649e-04  LHS=1.611e-02  (223s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_badge          internal=2.453e-04  LHS=8.374e-03  (229s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_qbc            internal=4.326e-04  LHS=3.690e-03  (229s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_physics        internal=3.074e-04  LHS=5.585e-02  (261s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_gradient       internal=3.818e-04  LHS=3.150e-02  (232s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_v4_mix         internal=2.616e-04  LHS=5.005e-02  (280s)
+
+── seed=456 ──
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_random         internal=3.195e-04  LHS=2.197e-01  (224s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_ic_coreset     internal=3.354e-04  LHS=2.539e-02  (224s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_badge          internal=2.632e-04  LHS=4.796e-02  (229s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_qbc            internal=3.013e-04  LHS=9.190e-02  (230s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_physics        internal=2.646e-04  LHS=2.125e-02  (261s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_gradient       internal=4.423e-04  LHS=6.935e-02  (232s)
+  t_max override: ub[:,1] = 124.10  (was 1.00)
+  Model: PINN  h=128  L=3  K=3  +PCA bottleneck k=8
+  pinn_v4_mix         internal=3.362e-04  LHS=3.557e-02  (278s)
+
+Total wall time: 83.9 min
+
+============================================================================
+  SELECTOR ABLATION — budget=30
+============================================================================
+variant                   int_mean    int_std    LHS_mean    LHS_std   n
+----------------------------------------------------------------------------
+pinn_badge               2.364e-04   2.63e-05   2.303e-02   1.77e-02   3
+pinn_ic_coreset          2.950e-04   2.97e-05   2.790e-02   1.08e-02   3
+pinn_v4_mix              2.944e-04   3.11e-05   2.939e-02   1.99e-02   3
+pinn_qbc                 3.675e-04   5.36e-05   3.894e-02   3.81e-02   3
+pinn_gradient            3.525e-04   8.77e-05   5.765e-02   1.85e-02   3
+pinn_physics             2.728e-04   2.55e-05   5.799e-02   3.09e-02   3
+pinn_random              3.629e-04   3.67e-05   1.056e-01   8.36e-02   3
+
+  vs pinn_random on LHS:
+    pinn_ic_coreset        +73.6%
+    pinn_badge             +78.2%
+    pinn_qbc               +63.1%
+    pinn_physics           +45.1%
+    pinn_gradient          +45.4%
+    pinn_v4_mix            +72.2%
