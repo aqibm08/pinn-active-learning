@@ -30,8 +30,6 @@ studies:
 | `results/` | per-run JSON logs for every experiment in the paper, plus sweep stdout logs |
 | `checkpoints/` | trained PSA model used for the true-vs-predicted figures |
 
-`figures/` and `tables/` are created on demand by the analysis scripts and
-are not tracked.
 
 ## Setup
 
